@@ -20,6 +20,7 @@
         .container {
             text-align: center;
             animation: fadeIn 2s ease-in-out;
+            padding: 20px;
         }
 
         h1 {
@@ -28,12 +29,21 @@
             margin-bottom: 20px;
         }
 
+        p {
+            font-size: 1.2rem;
+            color: #fff;
+            margin: 10px 0;
+        }
+
         .video-container {
             margin: 20px 0;
+            max-width: 500px; /* Limits the width of the video */
+            width: 90%; /* Makes the video responsive */
         }
 
         video {
-            width: 80%;
+            width: 100%; /* Makes the video scale within the container */
+            max-height: 300px; /* Limits the height to keep the video from taking too much space */
             border-radius: 10px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
         }
@@ -62,13 +72,13 @@
 <body>
     <div class="container">
         <p>Hey, it's been around 9 months since we really started talking
-        and every bit of it feels like heaven. I love you so much daisy and
-        i want to be yours completely. </p>
-        <h1> So,Sarah Anike Oladunni Chiamaka Olaegbe</h1>
+        and every bit of it feels like heaven. I love you so much, Daisy, and
+        I want to be yours completely.</p>
+        <h1>So, Sarah Anike Oladunni Chiamaka Olaegbe</h1>
         <p>Will you be my girlfriend?</p>
         <div class="video-container">
             <video controls>
-                <source src="daisy.mp4" type="video/mp4" height='500px' width= '500px'>
+                <source src="daisy.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
